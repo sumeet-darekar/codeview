@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #1f221f;  
+}
+
+
+.font{
+  color: #EDF5E1;
+}
+
+.code{
+  background-color: black;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Make the sidebar fixed */
+  top: 0;
+  left: 0;
+  background-color: black; /* Set the background color of the sidebar */
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.level1{
+  background-color: black;
+}
+
+.level2{
+  background-color: black;
+}
+
+.level3{
+  background-color: black;
+}
+
+.level4{
+  background-color: black;
+}
+
+.level5{
+  background-color: black;
+}
