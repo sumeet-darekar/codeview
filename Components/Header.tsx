@@ -2,7 +2,6 @@
 import React, {useState,useEffect} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from "react-responsive-carousel";
-import axios from "axios";
 import Link from "next/link";
 
 export default function header() {
