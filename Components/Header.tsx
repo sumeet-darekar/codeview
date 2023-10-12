@@ -15,7 +15,7 @@ export default function header() {
       </div>
       </div>
       <div className=" back sidenav">
-          <h1 className="font flex text-center justify-center text-2xl py-4">Beginner levels</h1>
+          <h1 className="font flex text-center justify-center beg">Beginner levels</h1>
 
          <Link href="/lvl1" className="font">Injection [ php ]</Link>
         <Link href="/lvl2"  className="font">filedump [ php ]</Link>
