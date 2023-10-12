@@ -6,27 +6,23 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 export default function page(){
+    const [isOpen, setIsOpen] = useState(false);
+
+    const togglePopdown = () => {
+      setIsOpen(!isOpen);
+    };
     const code=`
-    var users = {
-        "testuser":{
-            "isAdmin":false,
-            "name":"user1"
-    },
-        "admin":{
-            "isAdmin":true,
-            "name":"admin
-    }
-    }
-    
-    app.post('/vuln',(request,response) => {
-        lodash.merge(users[request.body.user])
-        if(users[request.body.user].isAdmin == true){
-            response.send(<access granted>)
-    }
-        else{
-            response(<don't have access>)
-    }
-    })
+    var merge = function(target, source) {
+        for(var attr in source) {
+           if(typeof(target[attr]) === "object" && typeof(source[attr]) === "object")
+             {
+                merge(target[attr], source[attr]);
+            } else {
+                target[attr] = source[attr];
+            }
+        }
+        return target;
+    };
     `
     return (
       <>
@@ -35,7 +31,22 @@ export default function page(){
     <SyntaxHighlighter language="javascript" style={nord} >
           {code}
         </SyntaxHighlighter>
-       <h1 className=" text-yellow-50"> [ hint: ever heard of lodash ]</h1>
+       <h1 className=" text-yellow-50 py-4"> [ hint: ever heard of __proto__ ]</h1>
+       <button onClick={togglePopdown} className=" bg-red-600 rounded px-1 py-1 font text-center">Answer</button>
+  
+  {isOpen && (
+<div className="popdown-content code rounded my-5">
+  <pre className="font px-1 py-1"> This code is Vulnerable to javascript prototype pollution.<br /><br />
+  For more info :
+  <a href="https://youtu.be/LD-KcuKM_0M?si=OMSDk8lHa5X4ABrF" className=" bg-red-500 rounded">NullCon vedio </a><br />
+    reference:
+  <a href="https://medium.com/node-modules/what-is-prototype-pollution-and-why-is-it-such-a-big-deal-2dd8d89a93c" className=" bg-red-500 rounded">Medium article</a>
+  
+  </pre>
+</div>
+    
+)}
+ 
             </div>
       </>
     

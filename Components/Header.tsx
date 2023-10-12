@@ -8,8 +8,8 @@ export default function header() {
   return (
     <>
       <div>
-        <h1 className="font flex text-center justify-center size py-4">Codeview</h1>
-        <h1 className="font flex text-center justify-center normal-size py-4">[ Find the Vulnerability in Code ]</h1>
+        <h1 className="font flex text-center justify-center size">Codeview</h1>
+        <h1 className="font flex text-center justify-center normal-size">[ Find the Vulnerability in Code ]</h1>
       <div className="code h-1/2 w-1/2 mx-auto rounded">
        
       </div>
@@ -22,10 +22,7 @@ export default function header() {
         <Link href="/lvl3"  className="font">alertme [ js ]</Link>
         <Link href="/lvl4"  className="font">polluteMe [ js ]</Link>
         <Link href="/lvl5"  className="font">It'sDoneOnlyResource</Link>
-
       </div>
-
-
     </>
   );
 };

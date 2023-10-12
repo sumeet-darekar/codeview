@@ -20,6 +20,7 @@
   font-size: 1.5em;
   padding-bottom: 2rem;
 }
+
 .font{
   color: #EDF5E1;
 }
@@ -27,6 +28,12 @@
 .code{
   background-color: #2E3440;
 }
+
+.answer-area {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
 
 .sidenav {
   height: 100%;
@@ -71,3 +78,4 @@
 .level5{
   background-color: black;
 }
+

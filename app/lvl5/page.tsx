@@ -6,6 +6,11 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { nord  } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 export default function page(){
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopdown = () => {
+    setIsOpen(!isOpen);
+  };
     const code=`
     String query = "SELECT * FROM information WHERE id = ?";
 
@@ -23,7 +28,20 @@ export default function page(){
     <SyntaxHighlighter language="javascript" style={nord } >
           {code}
         </SyntaxHighlighter>
-       <h1 className=" text-yellow-50"> [ hint: admin id ]</h1>
+       <h1 className=" text-yellow-50 py-4"> [ hint: admin id ]</h1>
+       <button onClick={togglePopdown} className=" bg-red-600 rounded px-1 py-1 font text-center">Answer</button>
+  
+          {isOpen && (
+        <div className="popdown-content code rounded my-5">
+          <pre className="font px-1 py-1">This Code is Vulnerable to IDOR [ Insecure Direct Object Reference ].<br />
+          By changing id number which can lead to the access of another users details.
+          <br /><br />  
+          Solution:
+          <br />It can be prevented by using proper authoriztion technics. 
+          </pre>
+        </div>
+            
+      )}
             </div>
       </>
     

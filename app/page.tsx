@@ -19,6 +19,7 @@ export default function page(){
           <a href="https://rules.sonarsource.com/java/type/Vulnerability/RSPEC-5131/" target="blank" className="font px-10">&#129313; sonar rules</a><br />
           <a href="https://www.youtube.com/live/fb-t3WWHsMQ?si=TvDxm3WNS2SgD9rJ" target="blank" className="font px-10">&#128187; shubham shah [ youtube ]</a><br />
           <a href="https://www.youtube.com/live/A8CNysN-lOM?si=MKf8Q95nG85Povl5" target="blank" className="font px-10">&#128214; vickie li [ youtube ]</a><br />
+          <a href="https://www.youtube.com/watch?v=GmWQ1VIjd2U&list=PLHUKi1UlEgOJLPSFZaFKMoexpM6qhOb4Q" target="blank" className="font px-10">🐱Cryptocat's dvwa playlist [ youtube ]</a>
           <br />
           <br />
           <br />
