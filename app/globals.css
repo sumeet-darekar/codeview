@@ -7,7 +7,12 @@
   background-color: #426e7b;  
 }
 
-
+.size{
+  font-size: 40px;
+}
+.normal-size{
+  font-size: 20px;
+}
 .font{
   color: #EDF5E1;
 }
