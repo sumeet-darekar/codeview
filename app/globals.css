@@ -79,3 +79,54 @@
   background-color: black;
 }
 
+
+
+.mobilemenu{
+  display: none;
+}
+
+/*responsive*/
+
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (max-width: 820px) {
+  /* Adjust font sizes and other styling for mobile */
+  .font {
+    font-size: 13px;
+  }
+  .size {
+    font-size: 24px;
+  }
+  .normal-size {
+    font-size: 20px;
+  }
+  .code {
+    width: 90%; /* Adjust the width for mobile */
+  }
+
+  /* Center the sidenav on mobile */
+  .sidenav {
+    text-align: center;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  .mobilemenu{
+    display:block;
+  }
+  
+.divtag{
+  width: 90%;
+  font-size: 1rem;
+
+  
+}
+
+.code-container {
+  height: 150px; /* Adjust the height as needed */
+  overflow: auto; /* Add a vertical scrollbar if content overflows */
+  white-space: pre; /* Preserve line breaks and spaces */
+}
+}

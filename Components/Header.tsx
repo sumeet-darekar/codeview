@@ -13,6 +13,7 @@ export default function header() {
       <div className="code h-1/2 w-1/2 mx-auto rounded">
        
       </div>
+      
       </div>
       <div className=" back sidenav">
           <h1 className="font flex text-center justify-center beg">Beginner levels</h1>

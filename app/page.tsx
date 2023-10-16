@@ -2,6 +2,7 @@
 
 import React, {useState,useEffect} from "react";
 import Header from "@/Components/Header";
+import Link from "next/link";
 
 export default function page(){
     return (
@@ -26,6 +27,12 @@ export default function page(){
           <h1 className="font px-4">Connect with me :</h1>
           <a href="https://www.linkedin.com/in/sumeet-darekar-07569a1b4/" className="font px-4">&#128526; linkedin</a>
       
+      </div>
+      <div className="h-1/2 w-1/2 mx-auto rounded-lg py-10 mobilemenu">
+        <p className="font py-2">Practise code review [5] </p>
+      <Link href="lvl1" className="font bg-red-600 rounded px-1 py-1 mx-2">Injection</Link>
+      <Link href="lvl2" className="font bg-red-600 rounded px-1 py-1">filedump</Link>
+      <p className="font py-2">5 codes to Practise For now more comming.</p>
       </div>
       
       </>
